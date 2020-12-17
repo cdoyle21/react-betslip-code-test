@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component {
-  render() {
+import Layout from './hoc/Layout/Layout';
+import Betslip from './containers/Betslip/Betslip';
+
+const app = props => {
+
     return (
-      <div className="App">
-
+      <div>
+        <Layout>
+          <Betslip />
+        </Layout>
       </div>
     );
-  }
+
 }
 
-export default App;
+export default app;
